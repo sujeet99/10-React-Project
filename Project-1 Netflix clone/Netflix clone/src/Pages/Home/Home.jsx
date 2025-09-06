@@ -1,10 +1,19 @@
 import React from 'react'
-import './Homecss'
-
+import './Home.css'
+import Navbar from '../../Components/Navbar/Navbar'
+import hero_banner from '../../assets/hero_banner.jpg'
+import hero-title from '../../assets/hero-title.png'
 const Home = () => {
   return (
     <div className='home'>
+      <Navbar/>
+      <div className="hero">
+        <img src={hero_banner} alt="" className='banner-img'/>
+        <div className="hero-caption">
+           <img src={hero_title} alt="" />
+        </div>
 
+      </div>
     </div>
   )
 }
